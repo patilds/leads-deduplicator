@@ -1,0 +1,37 @@
+2024-12-02 18:05:53.460 [main] INFO  deduplication.DeduplicateProcessor - Duplicate entry found with id: jkj238238jdsnfsj23
+2024-12-02 18:05:53.465 [main] INFO  deduplication.DeduplicateProcessor -
+Old object: Lead{_id='jkj238238jdsnfsj23', email='foo@bar.com', firstName='John', lastName='Smith', address='123 Street St', entryDate='2014-05-07T17:30:20+00:00'}
+New object: Lead{_id='jkj238238jdsnfsj23', email='coo@bar.com', firstName='Ted', lastName='Jones', address='456 Neat St', entryDate='2014-05-07T17:32:20+00:00'}
+Field differences:
+Email: From: foo@bar.com, To: coo@bar.com, Address: From: 123 Street St, To: 456 Neat St, First name: From: John, To: Ted, Last Name: From: Smith, To: Jones, Entry date: From: 2014-05-07T17:30:20+00:00, To: 2014-05-07T17:32:20+00:00
+------------------
+2024-12-02 18:05:53.466 [main] INFO  deduplication.DeduplicateProcessor - Duplicate entry found with email: foo@bar.com
+2024-12-02 18:05:53.466 [main] INFO  deduplication.DeduplicateProcessor -
+Old object: Lead{_id='sel045238jdsnfsj23', email='foo@bar.com', firstName='John', lastName='Smith', address='123 Street St', entryDate='2014-05-07T17:32:20+00:00'}
+New object: Lead{_id='qest38238jdsnfsj23', email='foo@bar.com', firstName='John', lastName='Smith', address='123 Street St', entryDate='2014-05-07T17:32:20+00:00'}
+Field differences:
+Id: From: sel045238jdsnfsj23, To: qest38238jdsnfsj23,
+------------------
+2024-12-02 18:05:53.466 [main] INFO  deduplication.DeduplicateProcessor - Duplicate entry found with email: foo@bar.com
+2024-12-02 18:05:53.466 [main] INFO  deduplication.DeduplicateProcessor -
+Old object: Lead{_id='qest38238jdsnfsj23', email='foo@bar.com', firstName='John', lastName='Smith', address='123 Street St', entryDate='2014-05-07T17:32:20+00:00'}
+New object: Lead{_id='wuj08238jdsnfsj23', email='foo@bar.com', firstName='Micah', lastName='Valmer', address='123 Street St', entryDate='2014-05-07T17:33:20+00:00'}
+Field differences:
+Id: From: qest38238jdsnfsj23, To: wuj08238jdsnfsj23, First name: From: John, To: Micah, Last Name: From: Smith, To: Valmer, Entry date: From: 2014-05-07T17:32:20+00:00, To: 2014-05-07T17:33:20+00:00
+------------------
+2024-12-02 18:05:53.466 [main] INFO  deduplication.DeduplicateProcessor - Duplicate entry found with email: mae@bar.com
+2024-12-02 18:05:53.466 [main] INFO  deduplication.DeduplicateProcessor -
+Old object: Lead{_id='edu45238jdsnfsj23', email='mae@bar.com', firstName='Ted', lastName='Masters', address='44 North Hampton St', entryDate='2014-05-07T17:31:20+00:00'}
+New object: Lead{_id='belr28238jdsnfsj23', email='mae@bar.com', firstName='Tallulah', lastName='Smith', address='123 Water St', entryDate='2014-05-07T17:33:20+00:00'}
+Field differences:
+Id: From: edu45238jdsnfsj23, To: belr28238jdsnfsj23, Address: From: 44 North Hampton St, To: 123 Water St, First name: From: Ted, To: Tallulah, Last Name: From: Masters, To: Smith, Entry date: From: 2014-05-07T17:31:20+00:00, To: 2014-05-07T17:33:20+00:00
+------------------
+2024-12-02 18:05:53.466 [main] INFO  deduplication.DeduplicateProcessor - Duplicate entry found with id: jkj238238jdsnfsj23
+2024-12-02 18:05:53.466 [main] INFO  deduplication.DeduplicateProcessor -
+Old object: Lead{_id='jkj238238jdsnfsj23', email='coo@bar.com', firstName='Ted', lastName='Jones', address='456 Neat St', entryDate='2014-05-07T17:32:20+00:00'}
+New object: Lead{_id='jkj238238jdsnfsj23', email='bill@bar.com', firstName='John', lastName='Smith', address='888 Mayberry St', entryDate='2014-05-07T17:33:20+00:00'}
+Field differences:
+Email: From: coo@bar.com, To: bill@bar.com, Address: From: 456 Neat St, To: 888 Mayberry St, First name: From: Ted, To: John, Last Name: From: Jones, To: Smith, Entry date: From: 2014-05-07T17:32:20+00:00, To: 2014-05-07T17:33:20+00:00
+------------------
+
+Process finished with exit code 0
